@@ -1,0 +1,15 @@
+// ==UserScript==
+// @name         Youtube List Abort
+// @match *://www.youtube.com/*
+// @exclude *://www.youtube.com/embed/*
+// @grant        none
+// @author Ivar Rydstrom
+// @run-at document-start
+// ==/UserScript==
+
+var url = window.location.href;
+if (url.indexOf("list") > 1) {
+  url = url.substring(0, url.indexOf('list='));
+  console.log(url);
+  window.location.href = url;
+}
