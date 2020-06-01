@@ -1,4 +1,4 @@
-# Youtube-NoMorePlaylists
+# Youtube-List-Abort
 Automatically redirects to non-playlist versions of videos in playlists. Runs with Tampermonkey (or equivalent)
 
 
